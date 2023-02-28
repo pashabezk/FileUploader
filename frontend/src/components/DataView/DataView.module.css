@@ -1,0 +1,28 @@
+.wrapper {
+	max-width: 800px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 10px;
+	margin: 20px auto;
+}
+
+.wrapper button {
+	max-width: 150px;
+	margin: auto;
+}
+
+.table {
+	border: 1px solid;
+	border-collapse: collapse;
+}
+
+.table th,
+.table td {
+	border: 1px solid;
+	padding: 4px;
+}
+
+.table caption button {
+	margin-left: 5px;
+}

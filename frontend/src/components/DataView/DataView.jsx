@@ -48,7 +48,10 @@ const DataView = () => {
 			.then(response => {
 				if(response.data.data && response.data.data.length > 0)
 					setData(response.data.data);
-				else setError("Данных в БД нет");
+				else {
+					setData([]);
+					setError("Данных в БД нет");
+				}
 			})
 			.catch(reason => setError(reason));
 	}

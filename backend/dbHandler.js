@@ -30,7 +30,6 @@ exports.checkConnection = () => {
 
 // вставляет данные в БД
 exports.insertOrReplaceData = async ({ddate, ttime, number1, number2, number3, number4, number5}) => {
-	console.log(`replace into files values ("${ddate}","${ttime}",${number1},${number2},${number3},${number4},${number5});`)
 	await DB.execute(`replace into files values ("${ddate}","${ttime}",${number1},${number2},${number3},${number4},${number5});`);
 };
 
